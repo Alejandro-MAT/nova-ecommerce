@@ -1,0 +1,67 @@
+@import "tailwindcss";
+
+@theme {
+  /* ==========================================================================
+     PALETA DE COLORES PRINCIPAL (Textos, Fondos y Bordes)
+     ========================================================================== */
+
+  /* Color principal de la marca (Textos destacados y títulos principales) */
+  --color-brand: #17343a;
+
+  /* Color para textos secundarios, descripciones e iconos no activos */
+  --color-muted: #687b80;
+
+  /* Color de acento para botones o enlaces resaltados */
+  --color-accent: #108b81;
+
+  /* Color de fondo principal de toda la página */
+  --color-page: #f7f8f6;
+
+  /* Color para tarjetas y contenedores (Header, tarjetas de productos) */
+  --color-surface: #ffffff;
+
+  /* Color de las líneas divisorias y bordes sutiles */
+  --color-border: #e2e8e8;
+
+  /* Color exclusivo para las estrellas de puntuación/valoración */
+  --color-rating: #f2a34a;
+
+  /* Color de alerta para badges de oferta o eliminar elementos del carrito */
+  --color-danger: #ef4444;
+
+  /* Fondo de la barra de búsqueda y campos de texto */
+  --color-gray-custom: #f0f2f2;
+
+  /* Color de fondo al pasar el cursor (hover) por enlaces o filas de categorías */
+  --color-gray-selection: #e2e8f0;
+
+  /* ==========================================================================
+     FILTROS DE PRODUCTO (Círculos de color)
+     ========================================================================== */
+
+  --color-beige: #e8e0d5;
+  --color-verdesalvia: #849482;
+  --color-gris: #929a99;
+  --color-negro-carbon: #293a3b;
+  --color-Terracota-suave: #efa393;
+
+  /* ==========================================================================
+     TIPOGRAFÍA Y BORDES REDONDEADOS
+     ========================================================================== */
+
+  /* Fuente tipográfica primaria de la aplicación */
+  --font-sans: "Poppins", sans-serif;
+
+  /* Redondeado de esquinas para tarjetas de productos y contenedores */
+  --radius-card: 12px;
+
+  /* Redondeado de esquinas para botones y controles de interfaz */
+  --radius-control: 8px;
+
+  /* ==========================================================================
+     SOMBRAS PERSONALIZADAS
+     ========================================================================== */
+
+  /* Sombra suave e indivisible para dar elevación a las tarjetas */
+  --shadow-card: 0 2px 8px rgb(23 52 58 / 5%);
+}

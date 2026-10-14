@@ -1,0 +1,351 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>p1-e-commerce</title>
+  </head>
+  <body class="bg-page flex h-screen flex-col overflow-hidden">
+    <script type="module" src="/src/main.js" defer></script>
+
+    <header
+      class="bg-header flex-no-wrap border-border flex h-16 items-center justify-between border-b px-8"
+    >
+      <div class="text-brand basis-[10%] text-xl font-bold tracking-[0.35em]">
+        NOVA
+      </div>
+      <nav
+        class="flex-no-wrap flex h-full basis-[45%] justify-around text-sm tracking-[0.15em]"
+      >
+        <a
+          href="#"
+          class="group text-brand relative flex h-full items-center font-semibold"
+          >Inicio
+          <span
+            class="bg-brand absolute bottom-1 left-1/2 h-0.5 w-6 -translate-x-1/2"
+          ></span>
+        </a>
+        <a
+          href="#"
+          class="group text-brand relative flex h-full items-center transition-colors hover:font-semibold"
+          >Tienda
+          <span
+            class="group-hover:bg-brand absolute bottom-1 left-1/2 h-0.5 w-6 -translate-x-1/2 bg-transparent transition-colors"
+          ></span>
+        </a>
+        <a
+          href="#"
+          class="group text-brand relative flex h-full items-center transition-colors hover:font-semibold"
+          >Categorias
+          <span
+            class="group-hover:bg-brand absolute bottom-1 left-1/2 h-0.5 w-6 -translate-x-1/2 bg-transparent transition-colors"
+          ></span>
+        </a>
+        <a
+          href="#"
+          class="group text-brand relative flex h-full items-center transition-colors hover:font-semibold"
+          >Sobre nosotros
+          <span
+            class="group-hover:bg-brand absolute bottom-1 left-1/2 h-0.5 w-6 -translate-x-1/2 bg-transparent transition-colors"
+          ></span>
+        </a>
+        <a
+          href="#"
+          class="group text-brand relative flex h-full items-center transition-colors hover:font-semibold"
+          >Contacto
+          <span
+            class="group-hover:bg-brand absolute bottom-1 left-1/2 h-0.5 w-6 -translate-x-1/2 bg-transparent transition-colors"
+          ></span>
+        </a>
+      </nav>
+      <div
+        class="flex-no-wrap flex basis-[45%] items-center justify-between pl-8"
+      >
+        <label class="bg-gray-custom relative w-[60%] rounded-full py-1.5 pl-8">
+          <i
+            data-lucide="search"
+            class="text-brand absolute bottom-2.5 left-2.5 h-4 w-4 shrink-0 hover:cursor-pointer"
+          ></i>
+          <input
+            type="text"
+            placeholder="Buscar productos, categorías..."
+            class="text-brand placeholder:text-muted w-full bg-transparent pl-3 text-sm focus:outline-none"
+          />
+        </label>
+        <div
+          class="text-brand flex basis-[40%] items-center justify-around gap-4"
+        >
+          <button
+            class="hover:text-danger transition-colors hover:cursor-pointer"
+          >
+            <i data-lucide="heart" class="h-5 w-5"></i></button
+          ><button
+            class="hover:text-accent transition-colors hover:cursor-pointer"
+          >
+            <i data-lucide="user" class="h-5 w-5"></i></button
+          ><button
+            class="hover:text-accent transition-colors hover:cursor-pointer"
+          >
+            <i data-lucide="shopping-cart" class="h-5 w-5"></i>
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div class="flex flex-1 overflow-hidden">
+      <aside
+        class="border-border h-full basis-[21%] overflow-y-auto border-r px-3 py-6"
+      >
+        <details class="group border-border relative border-b pb-4" open>
+          <summary class="flex cursor-pointer items-center justify-between">
+            <div class="flex items-center gap-2 text-brand">
+              <i data-lucide="layout-grid " class="h-4 w-4"></i>
+              <span class="font-bold">Categorías</span>
+            </div>
+            <i
+              data-lucide="chevron-down"
+              class="h-4 w-4 transition-transform duration-200 group-open:rotate-180"
+            ></i>
+          </summary>
+          <div class="mt-2">
+            <ul>
+              <li>
+                <button
+                  type="button"
+                  class="hover:bg-gray-selection text-muted hover:text-brand flex w-full items-center justify-between gap-1.5 rounded-lg px-2 py-1.5 text-sm font-semibold transition-colors hover:cursor-pointer"
+                >
+                  <div class="flex items-center gap-2">
+                    <i data-lucide="square" class="h-4 w-4 shrink-0"></i>
+                    <span>Todos Los productos</span>
+                  </div>
+                  <span>(120)</span>
+                </button>
+              </li>
+
+              <li>
+                <button
+                  type="button"
+                  class="hover:bg-gray-selection text-muted flex w-full items-center justify-between gap-1.5 rounded-lg px-2 py-1.5 text-sm font-semibold transition-colors hover:cursor-pointer hover:text-brand"
+                >
+                  <div class="flex items-center justify-between gap-2">
+                    <i data-lucide="sofa" class="h-4 w-4 shrink-0"></i>
+                    <span class="">Sala</span>
+                  </div>
+                  <span>(32)</span>
+                </button>
+              </li>
+
+              <li>
+                <button
+                  type="button"
+                  class="hover:bg-gray-selection text-muted flex w-full items-center justify-between gap-1.5 rounded-lg px-2 py-1.5 text-sm font-semibold transition-colors hover:cursor-pointer hover:text-brand"
+                >
+                  <div class="flex items-center justify-between gap-2">
+                    <i data-lucide="bed-double" class="h-4 w-4 shrink-0"></i>
+                    <span>Dormitorio</span>
+                  </div>
+                  <span>(28)</span>
+                </button>
+              </li>
+
+              <li>
+                <button
+                  type="button"
+                  class="hover:bg-gray-selection text-muted flex w-full items-center justify-between gap-1.5 rounded-lg px-2 py-1.5 text-sm font-semibold transition-colors hover:cursor-pointer hover:text-brand"
+                >
+                  <div class="flex items-center justify-between gap-2">
+                    <i data-lucide="chef-hat" class="h-4 w-4 shrink-0"></i>
+                    <span>Cocina</span>
+                  </div>
+                  <span>(18)</span>
+                </button>
+              </li>
+
+              <li>
+                <button
+                  class="hover:bg-gray-selection text-muted flex w-full items-center justify-between gap-1.5 rounded-lg px-2 py-1.5 text-sm font-semibold transition-colors hover:cursor-pointer hover:text-brand"
+                >
+                  <div class="flex items-center justify-between gap-2">
+                    <i data-lucide="briefcase" class="h-4 w-4 shrink-0"></i>
+                    <span">Oficina</span>
+                  </div>
+                  <span>(12)</span>
+                </button>
+              </li>
+
+              <li>
+                <button
+                  type="button"
+                  class="hover:bg-gray-selection text-muted flex w-full items-center justify-between gap-1.5 rounded-lg px-2 py-1.5 text-sm font-semibold transition-colors hover:cursor-pointer hover:text-brand"
+                >
+                  <div class="flex items-center justify-between gap-2">
+                    <i data-lucide="bath" class="h-4 w-4 shrink-0"></i>
+                    <span">Baño</span>
+                  </div>
+                  <span>(10)</span>
+                </button>
+              </li>
+
+              <li>
+                <button
+                  type="button"
+                  class="hover:bg-gray-selection text-muted flex w-full items-center justify-between gap-1.5 rounded-lg px-2 py-1.5 text-sm font-semibold transition-colors hover:cursor-pointer hover:text-brand"
+                >
+                  <div class="flex items-center justify-between gap-2">
+                    <i data-lucide="lamp" class="h-4 w-4 shrink-0"></i>
+                    <span">Decoracion</span>
+                  </div>
+                  <span>(20)</span>
+                </button>
+              </li>
+            </ul>
+          </div>
+        </details>
+
+        <details class="group border-border relative border-b py-4 space-y-4" open>
+          <summary
+            class="flex items-center justify-between hover:cursor-pointer"
+          >
+            <span class="text-brand text-lm font-bold">Precio</span>
+            <i
+              data-lucide="chevron-down"
+              class="h-4 w-4 transition-transform duration-200 group-open:rotate-180"
+            ></i>
+          </summary>
+
+          <div class="flex">
+            <input type="range" value="100" class="w-full accent-muted h-1">
+          </div>
+
+          <div class="flex items-center justify-between text-brand text-sm">
+            <span>$0</span>
+            <span>$500+</span>
+          </div>
+        </details>
+
+        <details class="group border-border relative border-b py-4 space-y-4 text-muted" open>
+          <summary
+            class="flex items-center justify-between hover:cursor-pointer"
+          >
+            <span class="text-brand text-lm font-bold">Material</span>
+            <i
+              data-lucide="chevron-down"
+              class="h-4 w-4 transition-transform duration-200 group-open:rotate-180"
+            ></i>
+          </summary>
+
+          <div class="flex flex-col space-y-2">
+            <div class="flex text-sm gap-3">
+              <input type="checkbox" name="" id="" class="w-4">
+              <span class="flex gap-3">
+                <p>Madera</p>
+                <p>(45)</p>
+              </span>
+            </div>
+            <div class="flex text-sm gap-3">
+              <input type="checkbox" name="" id="" class="w-4">
+              <span class="flex gap-3">
+                <p>Metal</p>
+                <p>(22)</p>
+              </span>
+            </div>
+            <div class="flex text-sm gap-3">
+              <input type="checkbox" name="" id="" class="w-4">
+              <span class="flex gap-3">
+                <p>Cerámica</p>
+                <p>(18)</p>
+              </span>
+            </div>
+            <div class="flex text-sm gap-3">
+              <input type="checkbox" name="" id="" class="w-4">
+              <span class="flex gap-3">
+                <p>Tela</p>
+                <p>(26)</p>
+              </span>
+            </div>
+            <div class="flex text-sm gap-3">
+              <input type="checkbox" name="" id="" class="w-4">
+              <span class="flex gap-3">
+                <p>Vidrio</p>
+                <p>(9)</p>
+              </span>
+            </div>
+          </div>
+        </details>
+
+        <details class="group border-border relative border-b py-4 space-y-4 text-muted" open>
+          <summary
+            class="flex items-center justify-between hover:cursor-pointer"
+          >
+            <span class="text-brand text-lm font-bold">Valoracion</span>
+            <i
+              data-lucide="chevron-down"
+              class="h-4 w-4 transition-transform duration-200 group-open:rotate-180"
+            ></i>
+          </summary>
+
+          <div class="flex flex-col space-y-2">
+            <div class="flex text-sm gap-3 items-center">
+              <div class="flex">
+                <i data-lucide="star" class="h-4 w-4 fill-amber-400 text-amber-400"></i>
+                <i data-lucide="star" class="h-4 w-4 fill-amber-400 text-amber-400"></i>
+                <i data-lucide="star" class="h-4 w-4 fill-amber-400 text-amber-400"></i>
+                <i data-lucide="star" class="h-4 w-4 fill-amber-400 text-amber-400"></i>
+
+                <i data-lucide="star" class="h-4 w-4 text-gray-300 fill-none"></i>
+              </div>
+              <span>4+</span>
+              <span>(68)</span>
+            </div>
+            
+            <div class="flex text-sm gap-3 items-center">
+              <div class="flex">
+                <i data-lucide="star" class="h-4 w-4 fill-amber-400 text-amber-400"></i>
+                <i data-lucide="star" class="h-4 w-4 fill-amber-400 text-amber-400"></i>
+                <i data-lucide="star" class="h-4 w-4 fill-amber-400 text-amber-400"></i>
+                <i data-lucide="star" class="h-4 w-4 text-gray-300 fill-none"></i>
+                <i data-lucide="star" class="h-4 w-4 text-gray-300 fill-none"></i>
+              </div>
+              <span>3+</span>
+              <span>(92)</span>
+            </div>
+
+            <div class="flex text-sm gap-3 items-center">
+              <div class="flex">
+                <i data-lucide="star" class="h-4 w-4 fill-amber-400 text-amber-400"></i>
+                <i data-lucide="star" class="h-4 w-4 fill-amber-400 text-amber-400"></i>
+                <i data-lucide="star" class="h-4 w-4 text-gray-300 fill-none"></i>
+                <i data-lucide="star" class="h-4 w-4 text-gray-300 fill-none"></i>
+                <i data-lucide="star" class="h-4 w-4 text-gray-300 fill-none"></i>
+              </div>
+              <span>2+</span>
+              <span>(110)</span>
+            </div>
+
+            <div class="flex text-sm gap-3 items-center">
+              <div class="flex">
+                <i data-lucide="star" class="h-4 w-4 fill-amber-400 text-amber-400"></i>
+                <i data-lucide="star" class="h-4 w-4 text-gray-300 fill-none"></i>
+                <i data-lucide="star" class="h-4 w-4 text-gray-300 fill-none"></i>
+                <i data-lucide="star" class="h-4 w-4 text-gray-300 fill-none"></i>
+                <i data-lucide="star" class="h-4 w-4 text-gray-300 fill-none"></i>
+              </div>
+              <span>1+</span>
+              <span>(120)</span>
+            </div>
+
+          </div>
+        </details>
+
+        <button type="button" class="flex items-center justify-center gap-2 rounded-lg mt-8 border w-full py-1.5 text-sm border-border text-brand font-semibold hover:bg-muted hover:cursor-pointer hover:text-gray-selection transition-colors duration-300">
+          <i data-lucide="rotate-ccw" class="h-4 w-4"></i>
+          <span>Limpiar Filtros</span>
+        </button>
+      </aside>
+
+      <main class=""></main>
+      <aside class=""></aside>
+    </div>
+  </body>
+</html>
