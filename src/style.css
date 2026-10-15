@@ -46,11 +46,18 @@
   --color-Terracota-suave: #efa393;
 
   /* ==========================================================================
+     Banner
+     ========================================================================== */
+
+  --color-banner-bg: #e8e5e1;
+
+  /* ==========================================================================
      TIPOGRAFÍA Y BORDES REDONDEADOS
      ========================================================================== */
 
   /* Fuente tipográfica primaria de la aplicación */
   --font-sans: "Poppins", sans-serif;
+  --font-serif: "Playfair Display", serif;
 
   /* Redondeado de esquinas para tarjetas de productos y contenedores */
   --radius-card: 12px;
