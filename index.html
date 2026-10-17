@@ -98,7 +98,7 @@
 
     <div class="flex flex-1 overflow-hidden">
       <aside
-        class="border-border h-full basis-[21%] overflow-y-auto border-r px-3 py-6"
+        class="border-border h-full basis-[21%] overflow-y-auto border-r px-3"
       >
         <details class="group border-border relative border-b pb-4" open>
           <summary class="flex cursor-pointer items-center justify-between">
@@ -303,7 +303,7 @@
         </button>
       </aside>
 <!-- contenedor principal medio -->
-      <main class="flex flex-col h-full text-muted basis-[59%] px-4">
+      <main class="flex flex-col h-full text-muted basis-[59%] px-4 ">
 <!-- banner -->
         <div class="flex my-3 h-full basis-[30%] bg-banner-bg rounded-xl overflow-hidden items-center justify-center shrink-0">
           <div class="flex flex-col basis-[50%] py-8 pl-8">
@@ -321,7 +321,12 @@
             </button>
           </div>
           <div class="basis-[50%] h-full w-full flex items-center overflow-hidden">
-            <img src="./public/images/banner-hero.jpg" alt="Imagen de marcador de posición" class="h-full w-full object-cover">
+            <img 
+            src="" 
+            alt=""
+            title="" 
+            id="principalBanner-img"
+            class="h-full w-full object-cover">
           </div>
         </div>
 
@@ -360,10 +365,11 @@
           </div>
 
         </div>
+
         <!-- Sección de Productos Destacados -->
-        <div class="w-full mt-3 text-brand basis-[50%]">
+        <div class="w-full  mt-4 text-brand basis-[50%] flex flex-col overflow-hidden"> 
           <!-- Cabecera de la sección (Título y Ordenar por) -->
-          <div class="flex justify-between items-center">
+          <div class="flex justify-between items-center mb-4">
             <h3 class="text-lg font-bold">Productos destacados</h3>
             <div class="flex items-center gap-2 text-sm">
               <span>Ordenar por:</span>
@@ -376,23 +382,9 @@
           </div>
 
           <!-- Contenedor Grid Vacío (Listo para que JS inyecte las tarjetas) -->
-          <div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-sm">
+          <div id="product-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 text-sm overflow-y-auto pr-2 scrollbar-thin">
             <!--  tarjetas  -->
-             <div class="w-full p-2 gap-2 rounded-xl border border-border">
-              <img src="./public/images/Products/cama-king-capitone.webp" alt="" class="rounded-xl">
-
-              <div class="flex flex-col gap-1">
-                <span>Sofá Nordico</span>
-                <p class="text-xs text-muted">sala</p>
-                <span class="font-semibold">$399.99</span>
-              </div>
-
-              <button type="button" class="flex gap-2 items-center text-gray-custom bg-brand rounded-xl p-2 w-full justify-center">
-                <i data-lucide="shopping-cart" class="h-5 w-5"></i>
-                <span class="font-semibold ">Agregar al carrito</span>
-              </button>
-
-             </div>
+             
           </div>
 
           <!-- Botón Cargar Más -->
@@ -425,7 +417,11 @@
           </button>
 
           <div class="border border-border flex justify-between text-xs gap-3 bg-gray-custom w-full h-[20%]">
-            <img src="" alt="Atención al cliente y soporte NOVA " id="help-banner-img" class="basis-[30%] rounded-l-xl object-cover title="">
+            <img 
+            src="" 
+            alt="" 
+            id="help-banner-img" 
+            class="basis-[30%] rounded-l-xl object-cover title="">
             <div class="flex flex-col justify-center basis-[70%] gap-2 p-3">
               <p class="font-semibold">¿Necesitas ayuda?</p>
               <p>¿Contáctanos en nuestro chat?</p>
